@@ -1,0 +1,217 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Русский (Россия) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "Main"
+    BEGIN
+        POPUP "Watering Settings"
+        BEGIN
+            MENUITEM "Auto setting",                ID_AUTO_SETTINGS
+            MENUITEM "Manual setting",              ID_MANUAL_SETTINGS
+        END
+        MENUITEM "Settings Connection",         ID_SETTINGS_CONNECTION
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_EXIT
+    END
+    MENUITEM "About program",               ID_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SETTINGS_AUTO_IRRIGATION DIALOGEX 0, 0, 167, 146
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_WINDOWEDGE
+CAPTION "Settings Auto Irrigation"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Saving",IDC_SAVING,8,120,153,18,BS_ICON
+    PUSHBUTTON      "<<",IDC_PRIVIOUS,24,18,25,14
+    PUSHBUTTON      ">>",IDC_NEXT,125,18,26,14
+    CTEXT           "1 Plots",IDC_CURRENT_PLACE,75,23,22,8
+    LTEXT           "Upper moisture level",IDC_STATIC,24,61,66,8
+    GROUPBOX        "",IDC_STATIC,7,8,153,88
+    LTEXT           "Lower moisture level",IDC_STATIC,24,79,66,8
+    EDITTEXT        IDC_EDIT_MIN,107,73,14,14,ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN
+    EDITTEXT        IDC_EDIT_MAX,107,56,14,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SPIN_MAX,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS,126,55,11,14
+    CONTROL         "Irrigation this plots",IDC_IS_IRRIGATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,37,126,10
+    CONTROL         "",IDC_SPIN_MIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS,127,72,10,14
+    LTEXT           "*After the first save, changes in settings will be",IDC_STATIC,8,97,154,8
+    LTEXT           "automatically saved",IDC_STATIC,12,105,64,8
+END
+
+IDD_SETTINGS_MANUAL_IRRIGATION DIALOGEX 0, 0, 183, 242
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " Settings Manual Irrigation"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Saving",IDC_SAVING,18,216,151,18
+    LTEXT           "Time start irrigation",IDC_STATIC,34,62,63,8
+    LTEXT           "Duration irrigation",IDC_STATIC,35,79,58,8
+    EDITTEXT        IDC_TIME_MORNING_IRRIGATION,102,59,27,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DURATION_MORNING_IRRIGATION,102,78,27,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "<<",IDC_PRIVIOUS,30,11,26,14
+    PUSHBUTTON      ">>",IDC_NEXT,131,10,24,14
+    GROUPBOX        "Morning irrigation",IDC_STATIC,18,42,150,60
+    LTEXT           "Time start irrigation",IDC_STATIC,36,123,63,8
+    LTEXT           "Duration irrigation",IDC_STATIC,37,139,58,8
+    GROUPBOX        "Evening irrigation",IDC_STATIC,18,107,150,56
+    EDITTEXT        IDC_TIME_EVENING_IRRIGATION,102,120,27,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DURATION_EVENING_IRRIGATION,102,138,27,14,ES_AUTOHSCROLL
+    CONTROL         "Irrigation this plots",IDC_IS_IRRIGATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,30,76,10
+    LTEXT           "1 Plots",IDC_CURRENT_PLACE,84,15,22,8
+    LTEXT           "* Please enter the time correctly using the following",IDC_STATIC,12,168,166,8
+    LTEXT           "template hh:mm, incorrectly entered time will not",IDC_STATIC,17,177,157,8
+    LTEXT           "After the first save, changes in settings will be",IDC_STATIC,17,195,150,8
+    LTEXT           "automatically saved",IDC_STATIC,17,203,64,8
+    LTEXT           "be saved.",IDC_STATIC,18,186,33,8
+END
+
+IDD_SETTINGS_CONNECTION DIALOGEX 0, 0, 123, 68
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Settings Connection"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,66,48,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,6,48,50,14
+    LTEXT           "IP Address",IDC_STATIC,7,11,36,8
+    LTEXT           "Port",IDC_STATIC,23,29,14,8
+    EDITTEXT        IDC_IP_ADDRESS,42,7,66,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PORT,42,24,66,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_SETTINGS_AUTO_IRRIGATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_SETTINGS_MANUAL_IRRIGATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 235
+    END
+
+    IDD_SETTINGS_CONNECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 116
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_SETTINGS_AUTO_IRRIGATION AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SETTINGS_MANUAL_IRRIGATION AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SETTINGS_CONNECTION AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "irrigationIcon.ico"
+
+#endif    // Русский (Россия) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

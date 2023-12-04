@@ -1,0 +1,47 @@
+﻿  AutoSettingsDialog.cpp
+  ConnectionSettingsDialog.cpp
+C:\Users\ASUS\Desktop\Учёба\прога\код\ClientForC++\ClientForC++\ConnectionSettingsDialog.cpp(20,54): warning C4267: аргумент: преобразование из "size_t" в "UINT"; возможна потеря данных
+  DrawDonutChart.cpp
+C:\Users\ASUS\Desktop\Учёба\прога\код\ClientForC++\ClientForC++\DrawDonutChart.cpp(11,12): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\ASUS\Desktop\Учёба\прога\код\ClientForC++\ClientForC++\DrawDonutChart.cpp(13,10): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
+C:\Users\ASUS\Desktop\Учёба\прога\код\ClientForC++\ClientForC++\DrawDonutChart.cpp(14,11): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
+C:\Users\ASUS\Desktop\Учёба\прога\код\ClientForC++\ClientForC++\DrawDonutChart.cpp(15,11): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
+C:\Users\ASUS\Desktop\Учёба\прога\код\ClientForC++\ClientForC++\DrawDonutChart.cpp(16,13): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\ASUS\Desktop\Учёба\прога\код\ClientForC++\ClientForC++\DrawDonutChart.cpp(17,13): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\ASUS\Desktop\Учёба\прога\код\ClientForC++\ClientForC++\DrawDonutChart.cpp(20,52): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\ASUS\Desktop\Учёба\прога\код\ClientForC++\ClientForC++\DrawDonutChart.cpp(20,46): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\ASUS\Desktop\Учёба\прога\код\ClientForC++\ClientForC++\DrawDonutChart.cpp(20,37): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\ASUS\Desktop\Учёба\прога\код\ClientForC++\ClientForC++\DrawDonutChart.cpp(27,57): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\ASUS\Desktop\Учёба\прога\код\ClientForC++\ClientForC++\DrawDonutChart.cpp(27,28): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\ASUS\Desktop\Учёба\прога\код\ClientForC++\ClientForC++\DrawDonutChart.cpp(27,19): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  InfoAboutIrrigation.cpp
+C:\Users\ASUS\Desktop\Учёба\прога\код\ClientForC++\ClientForC++\InfoAboutIrrigation.cpp(3,63): warning C4129: i: неизвестная escape-последовательность
+C:\Users\ASUS\Desktop\Учёба\прога\код\ClientForC++\ClientForC++\InfoAboutIrrigation.cpp(3,80): warning C4129: p: неизвестная escape-последовательность
+C:\Users\ASUS\Desktop\Учёба\прога\код\ClientForC++\ClientForC++\InfoAboutIrrigation.cpp(5,40): warning C4129: i: неизвестная escape-последовательность
+C:\Users\ASUS\Desktop\Учёба\прога\код\ClientForC++\ClientForC++\InfoAboutIrrigation.cpp(6,41): warning C4129: p: неизвестная escape-последовательность
+  Irrigation.cpp
+  ManualSettingsDialog.cpp
+  Network.cpp
+C:\Users\ASUS\Desktop\Учёба\прога\код\ClientForC++\ClientForC++\Network.cpp(17,19): warning C4244: =: преобразование "double" в "_Ty", возможна потеря данных
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\ASUS\Desktop\Учёба\прога\код\ClientForC++\ClientForC++\Network.cpp(22,17): warning C4244: =: преобразование "double" в "_Ty", возможна потеря данных
+          with
+          [
+              _Ty=int
+          ]
+C:\Users\ASUS\Desktop\Учёба\прога\код\ClientForC++\ClientForC++\Network.cpp(29,34): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\ASUS\Desktop\Учёба\прога\код\ClientForC++\ClientForC++\Network.cpp(73,29): warning C4267: аргумент: преобразование из "size_t" в "u_short"; возможна потеря данных
+  Serialize.cpp
+  SerializeAutoIrrigation.cpp
+  SerializeMenualIrrigation.cpp
+  SettingsAutoIrrigation.cpp
+  SettingsMenuaIrrigation.cpp
+  Source.cpp
+C:\Users\ASUS\Desktop\Учёба\прога\код\ClientForC++\ClientForC++\Source.cpp(354,63): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\ASUS\Desktop\Учёба\прога\код\ClientForC++\ClientForC++\Source.cpp(416,12): warning C4244: return: преобразование "WPARAM" в "int", возможна потеря данных
+  Создание кода...
+C:\Users\ASUS\Desktop\Учёба\прога\код\ClientForC++\ClientForC++\Source.cpp(379): warning C4715: WndProc: значение возвращается не при всех путях выполнения
+  ClientForC++.vcxproj -> C:\Users\ASUS\Desktop\Учёба\прога\код\ClientForC++\x64\Debug\ClientForC++.exe
